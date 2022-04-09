@@ -1,0 +1,147 @@
+$backgroundColor:#EFF6EE;
+$textDark:#273043;
+$grey:#9197AE;
+$redLight:#F02D3A;
+$redDark:#DD0426;
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Epilogue', sans-serif;
+}
+
+body{
+    background-color: $backgroundColor ;
+}
+.section{
+    width: auto;
+    max-width: 900px;
+    margin: 0 auto;
+}
+.header{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.header h1{
+    margin: 24px 0;
+    color: $textDark;
+}
+.header h1 span{
+    color: $redDark;
+}
+.nav{
+    margin: 0 0 40px 0;
+}
+.nav-links{
+    text-decoration: none;
+    color: $grey;
+    margin: 0 24px ;
+    text-align: center;
+}
+.active{
+    color: $textDark;
+    font-weight: 600;
+}
+.nav-links i{
+    font-size: 20px;
+    margin-right: 4px;
+}
+.nav-links:hover{
+    color: $redLight;
+}
+.section h1{
+    color: $textDark;
+    margin: 0 0 24px 0;
+}
+.home-p{
+    font-size: 16px;
+    color: $textDark;
+    margin: 0 0 24px 0;
+}
+.home-p a{
+    text-decoration: none;
+    color: $textDark;
+    font-weight: 600;
+}
+.home-p a:hover{
+    color: $redLight;
+}
+.index-h3{
+    color: $textDark;
+    margin: 0 0 12px 0;
+
+}
+.instruments-ul{
+    list-style:none;
+    color: $textDark;
+}
+.instruments-li{
+    margin: 0 0 8px 0;
+}
+.card-wrapper{
+    display: flex;
+    flex-direction: column;
+}
+
+.card-thirds{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 0 32px 0;
+}
+
+.cards{
+    background-color:white;
+    display: flex;
+    flex-direction: column;
+    width: 260px;
+    height: fit-content;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 4px 0 32px #2730431f;
+}
+.cards:hover{
+    transform:translate(0,-8px);
+    transition: 100ms;
+    cursor: pointer;
+    box-shadow: 4px 0 32px #27304339;
+}
+
+.cards img{
+    object-fit: cover;
+    height: 200px;
+}
+.card-content{
+    display: flex;
+    flex-direction: column;
+}
+.card-header{
+    margin: 12px 8px 8px 8px;
+    color: $textDark;
+}
+.card-price{
+    display: flex;
+    justify-content: end;
+    margin: 16px 8px 8px 0;
+    color: $grey;
+}
+.footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 96px 0 64px 0;
+}
+.footer-link{
+    text-decoration: none;
+    color: $grey;
+    font-size: 20px;
+}
+.footer-link:hover{
+    color: $redLight;
+}
+.secondary-p{
+    color: $grey;
+    font-weight: 300;
+}
